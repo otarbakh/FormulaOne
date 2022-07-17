@@ -3,11 +3,22 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/99557/AndroidStudioProjects/FormulaOne/app/src/main/res/drawable/alfa_romeo_seeklogo_com.xml" value="0.1755" />
+        <entry key="..\:/Users/99557/AndroidStudioProjects/FormulaOne/app/src/main/res/drawable/alpine_seeklogo_com.xml" value="0.1755" />
+        <entry key="..\:/Users/99557/AndroidStudioProjects/FormulaOne/app/src/main/res/drawable/aston_martin_seeklogo_com.xml" value="0.1755" />
         <entry key="..\:/Users/99557/AndroidStudioProjects/FormulaOne/app/src/main/res/drawable/buttonframe.xml" value="0.1755" />
+        <entry key="..\:/Users/99557/AndroidStudioProjects/FormulaOne/app/src/main/res/drawable/ferrari_emblem_seeklogo_com.xml" value="0.1755" />
+        <entry key="..\:/Users/99557/AndroidStudioProjects/FormulaOne/app/src/main/res/drawable/haas_f1_team_seeklogo_com.xml" value="0.1755" />
+        <entry key="..\:/Users/99557/AndroidStudioProjects/FormulaOne/app/src/main/res/drawable/mclaren_formula_1_team_seeklogo_com.xml" value="0.1755" />
+        <entry key="..\:/Users/99557/AndroidStudioProjects/FormulaOne/app/src/main/res/drawable/red_bull_racing_logo___brandlogos_net.xml" value="0.1755" />
+        <entry key="..\:/Users/99557/AndroidStudioProjects/FormulaOne/app/src/main/res/drawable/scuderia_alpha_tauri_1.xml" value="0.1755" />
+        <entry key="..\:/Users/99557/AndroidStudioProjects/FormulaOne/app/src/main/res/drawable/williams_racing_seeklogo_com.xml" value="0.1755" />
         <entry key="..\:/Users/99557/AndroidStudioProjects/FormulaOne/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/99557/AndroidStudioProjects/FormulaOne/app/src/main/res/layout/dashboard.xml" value="0.20863616930312098" />
         <entry key="..\:/Users/99557/AndroidStudioProjects/FormulaOne/app/src/main/res/layout/driverslayout.xml" value="0.20863616930312098" />
         <entry key="..\:/Users/99557/AndroidStudioProjects/FormulaOne/app/src/main/res/layout/singledriverlayout.xml" value="0.20863616930312098" />
         <entry key="..\:/Users/99557/AndroidStudioProjects/FormulaOne/app/src/main/res/layout/singleteamlayout.xml" value="0.20863616930312098" />
+        <entry key="..\:/Users/99557/AndroidStudioProjects/FormulaOne/app/src/main/res/layout/teamslayout.xml" value="0.20863616930312098" />
         <entry key="..\:/Users/99557/AndroidStudioProjects/FormulaOne/app/src/main/res/layout/teamslogos.xml" value="0.20863616930312098" />
       </map>
     </option>
