@@ -1,11 +1,14 @@
-package com.example.formulaone
+package com.example.formulaone.Fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.GridLayoutManager
+import com.example.formulaone.Adapters.TeamAdapter
+import com.example.formulaone.Cards.TeamCard
+import com.example.formulaone.Datas.TeamData
 import com.example.formulaone.databinding.TeamslayoutBinding
 
 class TeamsFragment :Fragment() {
@@ -15,8 +18,8 @@ class TeamsFragment :Fragment() {
     }
 
 
-    val teamLists = mutableListOf<TeamData>()
-    val teamList = TeamCard()
+    private val teamLists = mutableListOf<TeamData>()
+    private val teamList = TeamCard()
 
 
     private var _binding: TeamslayoutBinding? = null
@@ -34,7 +37,7 @@ class TeamsFragment :Fragment() {
         super.onViewCreated(view, savedInstanceState)
         binding.apply {
             rvTeams.layoutManager =
-                LinearLayoutManager(requireContext(), LinearLayoutManager.VERTICAL, false)
+                GridLayoutManager(requireContext(),2, GridLayoutManager.VERTICAL, false)
             rvTeams.adapter = teamAdapter
 
             teamAdapter.apply {

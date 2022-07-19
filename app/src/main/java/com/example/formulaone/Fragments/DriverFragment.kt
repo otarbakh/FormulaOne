@@ -1,17 +1,22 @@
-package com.example.formulaone
+package com.example.formulaone.Fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.GridLayoutManager
+import com.example.formulaone.Adapters.DriverAdapter
+import com.example.formulaone.Datas.DriversData
+import com.example.formulaone.Cards.DriversList
 import com.example.formulaone.databinding.DriverslayoutBinding
 
-class DriverFragment :Fragment() {
-    private val driverAdapter:DriverAdapter by lazy{
+class DriverFragment : Fragment() {
+    private val driverAdapter: DriverAdapter by lazy {
         DriverAdapter()
     }
+
+
     val driversLists = mutableListOf<DriversData>()
     val driverList = DriversList()
     private var _binding: DriverslayoutBinding? = null
@@ -29,22 +34,32 @@ class DriverFragment :Fragment() {
         super.onViewCreated(view, savedInstanceState)
         binding.apply {
             rvDrivers.layoutManager =
-                LinearLayoutManager(requireContext(), LinearLayoutManager.VERTICAL, false)
+                GridLayoutManager(requireContext(), 2, GridLayoutManager.VERTICAL, false)
             rvDrivers.adapter = driverAdapter
 
             driverAdapter.apply {
+                setOnDeleteClickListener{
+                    driversData, i ->
+                    driversLists.remove(driversData)
+                    notifyItemRemoved(i)
+                }
                 driverList.driverCard(driversLists)
-                updateDrivers(driversLists)
+                driverAdapter.submitList(driversLists)
+                binding.btnAdd.setOnClickListener {
+                    driversLists.add(
+                        DriversData(
+                             etFullName.text.toString(),
+                            etAge.text.toString().toInt()
+                        )
+                    )
+                    notifyItemInserted(1)
+                }
             }
         }
-
-
     }
-
-    override fun onDestroyView() {
-        _binding = null
-        super.onDestroyView()
-
-    }
-
 }
+
+
+
+
+

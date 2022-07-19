@@ -1,10 +1,11 @@
-package com.example.formulaone
+package com.example.formulaone.Adapters
 
 
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.formulaone.Datas.TeamData
 import com.example.formulaone.databinding.SingleteamlayoutBinding
 
  class TeamAdapter : RecyclerView.Adapter<TeamAdapter.TeamViewHolder>() {
@@ -14,7 +15,7 @@ import com.example.formulaone.databinding.SingleteamlayoutBinding
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
-    ): TeamAdapter.TeamViewHolder {
+    ): TeamViewHolder {
         val binding =
             SingleteamlayoutBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return TeamViewHolder(binding)
@@ -45,3 +46,4 @@ import com.example.formulaone.databinding.SingleteamlayoutBinding
         notifyDataSetChanged()
     }
 }
+

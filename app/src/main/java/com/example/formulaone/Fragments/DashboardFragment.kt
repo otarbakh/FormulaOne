@@ -1,11 +1,11 @@
-package com.example.formulaone
+package com.example.formulaone.Fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.recyclerview.widget.RecyclerView
+import com.example.formulaone.R
 import com.example.formulaone.databinding.DashboardBinding
 
 
@@ -26,8 +26,15 @@ class DashboardFragment :Fragment() {
 
         binding.btnDriver.setOnClickListener{
             parentFragmentManager.beginTransaction().apply {
-                replace(R.id.tetriekrani,DriverFragment())
+                replace(R.id.tetriekrani, DriverFragment())
                 addToBackStack(DriverFragment::javaClass.name)
+                commit()
+            }
+        }
+        binding.btnTeam.setOnClickListener{
+            parentFragmentManager.beginTransaction().apply {
+                replace(R.id.tetriekrani, TeamsFragment())
+                addToBackStack(TeamsFragment::javaClass.name)
                 commit()
             }
         }

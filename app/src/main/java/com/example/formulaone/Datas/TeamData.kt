@@ -1,4 +1,4 @@
-package com.example.formulaone
+package com.example.formulaone.Datas
 
 data class TeamData(
     val id: Int,
