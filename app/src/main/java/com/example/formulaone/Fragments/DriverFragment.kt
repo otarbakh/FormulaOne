@@ -52,7 +52,8 @@ class DriverFragment : Fragment() {
                             etAge.text.toString().toInt()
                         )
                     )
-                    notifyItemInserted(1)
+                    notifyDataSetChanged()
+
                 }
             }
         }
